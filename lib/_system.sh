@@ -283,6 +283,8 @@ system_node_install() {
   sudo su - root <<EOF
   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
   apt-get install -y nodejs
+  npm install image-size
+  npm install --save-dev @types/image-size
   sleep 2
   npm install -g npm@latest
   sleep 2
